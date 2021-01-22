@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Calculator-Homework</title>
+        <link rel = "stylesheet" href = "styles.css"/>
+    </head>
+
+    <body id = "container">
+        <div class= "banner">
+            <h1> Calculator </h1>
+        </div>
+        <input  type="type"  id="number1" placeholder="Enter a number"/>
+        <input  type="type"  id="number2" placeholder="Enter a number"/>
+    </br>
+        <button class = "add"  onclick = "add()"> <strong>+</strong></button>
+        <button class = "subtract"  onclick = "subtract()"> <strong>-</strong></button>
+        <button class = "multiply"  onclick = "multiply()"> <strong>&times;</strong></button>
+        <button class = "divide"  onclick = "divide()"> <strong>&divide;</strong></button>
+    </br>
+        <input type="text" id='result' placeholder = "Result" readonly >
+    </br>
+        <input type="button" id ="clear" value="Clear" onClick="window.location.reload()"> 
+       
+        <script>
+
+            function add() {
+                first = parseFloat(document.getElementById("number1").value);
+                second = parseFloat(document.getElementById("number2").value);
+            
+                result.value = first+second;
+            }
+
+            function subtract() {
+                first = parseFloat(document.getElementById("number1").value);
+                second = parseFloat(document.getElementById("number2").value);
+
+                let max = Math.max(first, second);
+                if (max === first) {
+                    result.value = first - second;
+                }
+                else {
+                    result.value = second - first;
+                }
+            }
+
+            function multiply() {
+                first = parseFloat(document.getElementById("number1").value);
+                second = parseFloat(document.getElementById("number2").value);
+
+                result.value = first * second;
+            }
+
+            function divide() {
+                first = parseFloat(document.getElementById("number1").value);
+                second = parseFloat(document.getElementById("number2").value);
+
+                let max = Math.max(first, second);
+                if (max === first) {
+                    result.value = first/second;
+                }
+                else {
+                    result.value = second/first;
+                }
+            }
+        </script>
+    </body>
+</html>

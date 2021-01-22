@@ -1,0 +1,41 @@
+input{
+    width: 250px;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+ }
+button{
+    width: 100px;
+    height : 30px;
+    background-color: rgb(126, 149, 192);
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 20px;
+}
+#container{
+    background-color:whitesmoke;
+    text-align: center;
+}
+h1{
+    color: whitesmoke;
+    text-align: center;
+}
+#clear {
+    width: 100px;
+    height : 30px;
+    background-color: rgb(126, 149, 192);
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.banner{
+    width: 100vw;
+    height: 5vh;
+    background-color:rgb(126, 149, 192);
+    margin-bottom: 50px;
+}
